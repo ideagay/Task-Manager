@@ -1,7 +1,7 @@
 <template>
     <div class="pg-404">
         <img src="@/assets/imgs/404.png">
-        <el-button type="primary" size="big" @click="login">返回首页</el-button>
+        <el-button type="primary" size="big" @click="back">返回首页</el-button>
     </div>
 </template>
 
@@ -15,8 +15,8 @@ export default {
     components: {
     },
     methods: {
-        login () {
-            this.$router.push('web');
+        back () {
+            this.$router.push('/');
         }
     }
 };
@@ -27,7 +27,7 @@ export default {
     .pg-404{
         text-align: center;
         img{
-            margin: 100px auto;
+            margin: 60px auto 30px auto;
             display: block;
         }
     }
